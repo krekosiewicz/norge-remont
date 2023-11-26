@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        // 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        // 'gradient-conic':
+        //   'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
         gray: {
@@ -65,6 +65,7 @@ const config: Config = {
           950: '#100808', // 9.5
           1000: '#000000', // 10
         },
+        white: '#F6F6F6',
         gold: {
           0: '#FFFFFF', // 0
           50: '#FBF8F4', // 0.5
