@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-
+// #F6F6F6 - white
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,10 +8,31 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      gridAutoRows: {
+        '1rem': '16px'
+      },
+      gridTemplateRows: {
+        // Simple 10 row grid
+        // '10': 'repeat(10, minmax(0, 1fr))',
+        '5rm': 'repeat(10, 2rem)',
+        // '10rem': 'repeat(10, 10rem)',
+      },
+      gridTemplateColumns: {
+        '10rm': 'repeat(10, minmax(0, 10rem))',
+        '10rem': 'repeat(10, 5rem)',
+      },
+      screens: {
+        xs: '390px'
+      },
       backgroundImage: {
         // 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         // 'gradient-conic':
         //   'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      fontSize: {
+        '10xl': ['10rem', {
+          lineHeight: '1', // Set the line height to 1
+        }],
       },
       colors: {
         gray: {
@@ -66,6 +87,9 @@ const config: Config = {
           1000: '#000000', // 10
         },
         white: '#F6F6F6',
+        black: '#232323',
+        contact: '#E5E5E5',
+        form: '#A8ABB4',
         gold: {
           0: '#FFFFFF', // 0
           50: '#FBF8F4', // 0.5

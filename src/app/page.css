@@ -1,22 +1,10 @@
 /* Tailwind.css or your custom CSS file */
-@media (min-width: 440px) { /* Adjust this breakpoint if needed */
-    .section-home-bg {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%), url('/assets/HM-home-section.jpeg'), lightgray 50% / cover no-repeat;
-        /*background-image: url('/assets/HM-home-section.jpeg');*/
-        height: 800px; /* Height for mobile */
-    }
-    .section {
-        background: #232323;
-        height: 800px; /* Height for mobile */
-    }
-}
 
-@media (min-width: 640px) { /* This is the breakpoint for 'lg' in Tailwind by default */
-    .section-home-bg, .section {
-        height: 100vh; /* Height for desktop */
-    }
+.section-home-bg {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%), url('/assets/HM-home-section.jpeg'), lightgray 50% / cover no-repeat;
+    /*background-image: url('/assets/HM-home-section.jpeg');*/
+    /*background-attachment: fixed;*/
 }
-
 
 .section-offer-bg {
     background: linear-gradient(270deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 25.56%), linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.00) 65.6%), url('/assets/HM-offer-section.png'), lightgray 0px -92.458px / 113.767% 112.349% no-repeat;
@@ -40,4 +28,42 @@
 .section-home-bg, .section-offer-bg, .section-about-bg, .section-gallery-bg, .section-contact-bg  {
     background-size: cover;
     background-position: center;
+}
+
+.clip-home {
+    background-position: top;
+    clip: rect(0,auto,6rem,0);
+}
+
+
+/* Base navbar styling and transition setup */
+.base-navbar-styles {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Slide-up class */
+.slide-up {
+    transform: translateY(-100%); /* Adjust as needed */
+}
+
+/* Slide-down class (optional if you need to adjust initial position) */
+.slide-down {
+    transform: translateY(0);
+}
+
+.page-section {
+    max-height: 72rem;
+    @media (max-width: 640px) {
+        max-height: 700px;
+    }
+}
+
+.page-section-container {
+    height: 50vh;
+    @media screen(sm) {
+        height: 100vw;
+    }
+    @media screen(lg) {
+        height: 64rem;
+    }
 }
