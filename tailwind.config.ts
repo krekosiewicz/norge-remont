@@ -6,16 +6,20 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
+  // TODO configure this properly, see gallery/page and components/navbar
+  // safelist: [
+  //   { pattern: /(mx|ml|mr)-\[calc\(\(100%-\d+rem\)\*1\/\d+\)\]/, variants: ['responsive', 'hover', 'focus'] },
+  //   // Add more patterns and variants as needed
+  //   { pattern: /mx-\[calc\(.*\)\]/, variants: ['responsive', 'hover', 'focus'] },
+  //   { pattern: /ml-\[calc\(.*\)\]/, variants: ['responsive', 'hover', 'focus'] },
+  //   { pattern: /mr-\[calc\(.*\)\]/, variants: ['responsive', 'hover', 'focus'] },
+  // ],
   theme: {
     extend: {
-      gridAutoRows: {
-        '1rem': '16px'
-      },
       gridTemplateRows: {
-        // Simple 10 row grid
-        // '10': 'repeat(10, minmax(0, 1fr))',
         '5rm': 'repeat(10, 2rem)',
-        // '10rem': 'repeat(10, 10rem)',
+        'auto-fill-1rem': 'repeat(auto-fill, minmax(16px, 1fr))',
       },
       gridTemplateColumns: {
         '10rm': 'repeat(10, minmax(0, 10rem))',
