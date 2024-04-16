@@ -18,12 +18,11 @@ const config: Config = {
   theme: {
     extend: {
       gridTemplateRows: {
-        '5rm': 'repeat(10, 2rem)',
-        'auto-fill-1rem': 'repeat(auto-fill, minmax(16px, 1fr))',
+        'auto-fill-gallery': 'repeat(auto-fill, minmax(5vw, 1fr))',
+        '12': 'repeat(12, minmax(0, 1fr));'
       },
       gridTemplateColumns: {
-        '10rm': 'repeat(10, minmax(0, 10rem))',
-        '10rem': 'repeat(10, 5rem)',
+        'auto-fill-gallery': 'repeat(auto-fill, minmax(5vw, 1fr))',
       },
       screens: {
         xs: '390px'
