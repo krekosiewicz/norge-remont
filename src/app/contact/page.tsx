@@ -11,7 +11,7 @@ function Contact() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: unknown) => {
     // Process form data
     console.log(data);
   };
