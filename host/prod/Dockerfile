@@ -8,6 +8,9 @@ ENV DOMAIN_NAME=${DOMAIN_NAME}
 # Create directory for Certbot webroot authentication
 RUN mkdir -p /var/www/certbot
 
+# dummy
+RUN mkdir -p /var/www/certbot/.well-known/acme-challenge
+
 # Remove default nginx configurations
 RUN rm /etc/nginx/conf.d/default.conf
 
