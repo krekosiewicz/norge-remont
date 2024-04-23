@@ -172,9 +172,10 @@ const Gallery: React.FC = () => {
     <div className={`px-8 py-24 bg-gold-100 min-h-screen flex justify-center lg:overflow-auto h-[calc(3200px)] lg:h-auto`}>
       <div className={'relative w-full h-auto max-w-6xl '}>
         <div className={'grid grid-cols-12 grid-rows-auto-fill-gallery lg:grid-cols-auto-fill-gallery lg:grid-rows-12 gap-4 lg:w-screen h-full lg:absolute top-0 left-0 lg:gap-8'}>
-          <div className={`col-start-4 col-end-10 row-start-1 row-end-6 lg:col-start-2 lg:col-end-[6] lg:row-start-1 lg:row-end-[7] bg-green-500 mb-[5vw] lg:mb-[calc((100%-10rem)*1/6)]`}></div>
-          <div className={`col-start-1 col-end-7 row-start-5 row-end-[10] bg-green-500 mt-[5vw]`}></div>
-          <div className={`col-start-8 col-end-13 row-start-5 row-end-[11] bg-green-500 ${getUtilityArbitraryMargin(5, 'ml')} my-[5vw]`}></div>
+          <div className={`bg-black`}></div>
+          <div className={`col-start-4 col-end-10 row-start-1 row-end-6 lg:col-start-2 lg:col-end-[6] lg:row-start-1 lg:row-end-[7] bg-green-500 lg:mb-[calc((100%-10rem)*1/6)]`}></div>
+          {/*<div className={`col-start-1 col-end-7 row-start-5 row-end-[10] bg-green-500 mt-[5vw]`}></div>*/}
+          {/*<div className={`col-start-8 col-end-13 row-start-5 row-end-[11] bg-green-500 ${getUtilityArbitraryMargin(5, 'ml')} my-[5vw]`}></div>*/}
           {/*<div className={`col-start-2 col-end-[11] row-start-[10] row-end-[16] bg-green-500 ${getUtilityArbitraryMargin(9, 'mx')} mt-[5vw]`}></div>*/}
           {/*<div className={`col-start-6 col-end-[13] row-start-[16] row-end-[21] bg-red-500 ${getUtilityArbitraryMargin(7, 'ml')} mt-[5vw]`}></div>*/}
           {/*<div className={`col-start-2 col-end-[7] row-start-[19] row-end-[24] bg-red-500 ${getUtilityArbitraryMargin(5, 'mr')}`}></div>*/}

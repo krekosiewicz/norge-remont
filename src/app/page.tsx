@@ -8,10 +8,10 @@ export default function Home() {
       {/* section 1 */}
       <div className="section-home-bg h-screen justify-center">
         <div className="xs:justify-start mx-auto flex h-full items-end justify-center px-8 lg:max-w-6xl xl:px-0">
-          <div className="pb-40 text-white xl:pb-24">
-            <h1 className="text-5xl sm:text-8xl xl:text-10xl">high</h1>
-            <h1 className="text-5xl sm:text-8xl xl:text-10xl">maintenance</h1>
-          </div>
+          {/*<div className="pb-40 text-white xl:pb-24">*/}
+          {/*  <h1 className="text-5xl sm:text-8xl xl:text-10xl">high</h1>*/}
+          {/*  <h1 className="text-5xl sm:text-8xl xl:text-10xl">maintenance</h1>*/}
+          {/*</div>*/}
         </div>
       </div>
 

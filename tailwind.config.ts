@@ -19,10 +19,10 @@ const config: Config = {
     extend: {
       gridTemplateRows: {
         'auto-fill-gallery': 'repeat(auto-fill, minmax(5vw, 1fr))',
-        '12': 'repeat(12, minmax(0, 1fr));'
+        '12': 'repeat(12, 48px);'
       },
       gridTemplateColumns: {
-        'auto-fill-gallery': 'repeat(auto-fill, minmax(5%, 1fr))',
+        'auto-fill-gallery': 'repeat(auto-fill, minmax(9vh, 1fr))',
       },
       screens: {
         xs: '390px'
