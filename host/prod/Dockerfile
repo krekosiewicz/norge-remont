@@ -1,6 +1,10 @@
 # Use NGINX Alpine image as the base
 FROM nginx:alpine
 
+# Set environment variables for the build
+ARG DOMAIN_NAME
+ENV DOMAIN_NAME=${DOMAIN_NAME}
+
 # Create directory for Certbot webroot authentication
 RUN mkdir -p /var/www/certbot
 
