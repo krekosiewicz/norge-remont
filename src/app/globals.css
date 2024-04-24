@@ -21,16 +21,21 @@ html {
   width: 100%;
 }
 
-body {
-  /*height: 100%;*/
-  /*color: rgb(var(--foreground-rgb));*/
-  /*background: linear-gradient(*/
-  /*    to bottom,*/
-  /*    transparent,*/
-  /*    rgb(var(--background-end-rgb))*/
-  /*  )*/
-  /*  rgb(var(--background-start-rgb));*/
+@media (min-width: 1024px) {
+  .scrollable-grab {
+    overflow: auto;
+    cursor: grab;
+  }
+
+  .scrollable-grab::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
+
+  .scrollable-grabbing {
+    cursor: grabbing;
+  }
 }
+
 
 html, body, label {
   font-family: 'Roboto', sans-serif;

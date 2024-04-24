@@ -22,7 +22,7 @@ const config: Config = {
         '12': 'repeat(12, 48px);'
       },
       gridTemplateColumns: {
-        'auto-fill-gallery': 'repeat(auto-fill, minmax(9vh, 1fr))',
+        'auto-fill-gallery': 'repeat(28, minmax(100px, 1fr))',
       },
       screens: {
         xs: '390px'
