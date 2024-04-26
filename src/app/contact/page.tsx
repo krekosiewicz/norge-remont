@@ -40,11 +40,6 @@ function Contact() {
     setValue('phone', formattedPhoneNumber);
   };
 
-  const dupa = () => {
-    console.log(getValues(), errors);
-    // Add your form submission logic here
-  };
-
   // Typed submit handler using the form fields interface
   const onSubmit: SubmitHandler<ContactForm> = async (data) => {
     try {
@@ -169,7 +164,6 @@ function Contact() {
               Send
             </button>
           </div>
-          <div onClick={dupa}>test</div>
         </form>
       </div>
     </div>

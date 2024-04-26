@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap",
+    "build": "npm run generate-images && next build && next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-images": "node generateStaticImageImports.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
