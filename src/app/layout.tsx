@@ -5,6 +5,7 @@ import Footer from '@/components/Footer' // Import the Footer component
 
 
 import { Roboto } from 'next/font/google'
+import { ModalProvider } from '@/logic/modalContext'
 
 const roboto = Roboto({
   weight: '500',
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
+      <ModalProvider>
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
+      </ModalProvider>
       </body>
     </html>
   )

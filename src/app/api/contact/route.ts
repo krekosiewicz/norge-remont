@@ -17,6 +17,9 @@ export async function POST(request: NextRequest, res: NextResponse){
   const myPassword = process.env.NODEMAILER_PW;
   const HMEmail = process.env.HIGH_MAINTENANCE_EMAIL;
 
+
+  console.log(nodeMailer, myPassword, HMEmail);
+
   console.log("dealing with request")
 
   let transporter = nodemailer.createTransport({

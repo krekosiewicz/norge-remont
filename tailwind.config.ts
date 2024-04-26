@@ -18,7 +18,7 @@ const config: Config = {
   theme: {
     extend: {
       gridTemplateRows: {
-        'auto-fill-gallery': 'repeat(auto-fill, minmax(5vw, 1fr))',
+        'auto-fill-gallery': 'repeat(auto-fit, minmax(5vw, 1fr))',
         '12': 'repeat(12, 48px);'
       },
       gridTemplateColumns: {

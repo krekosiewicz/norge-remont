@@ -39,6 +39,7 @@ const Navbar: React.FC = () => {
       const position = window.scrollY;
       const screenHeight = window.innerHeight;
       setIsScrolled(position > screenHeight);
+      setIsMenuOpen(false);
     };
     // Listen for scroll events
     window.addEventListener("scroll", handleScroll);

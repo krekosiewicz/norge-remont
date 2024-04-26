@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="page-section page-section-container flex w-screen bg-black max-h-6xl">
+      <div className="page-section page-section-container flex w-screen bg-black max-h-6xl md:py-16">
         <div className="mx-auto flex w-full max-w-6xl items-end justify-start">
           <div className="section-about-bg flex h-full w-full max-w-5xl items-end justify-start">
             <div className="p-16">
@@ -57,12 +57,11 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          {/*section-gallery-bg flex h-full w-full max-w-5xl items-end justify-start */}
           <div className=""></div>
         </div>
       </div>
 
-      <div className="page-section page-section-container flex w-screen bg-black max-h-6xl pb-32">
+      <div className="page-section page-section-container flex w-screen bg-black max-h-6xl md:py-16">
         <div className="mx-auto flex w-full max-w-6xl items-end justify-start">
           <div className="section-contact-bg flex h-full w-full max-w-5xl items-end justify-start">
             <div className="p-16">
@@ -76,6 +75,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className={'bg-black w-screen pb-32'}></div>
     </main>
   );
 }

@@ -23,6 +23,7 @@ export const useDragToScroll = (): UseDragToScrollReturnType => {
   const [isGrabbing, setIsGrabbing] = useState<boolean>(false);
 
   const onMouseDown = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    e.stopPropagation();
     const el = containerRef.current;
     if (el) {
       setIsGrabbing(true);
