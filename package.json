@@ -18,7 +18,8 @@
     "nope-validator": "^1.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.51.2"
+    "react-hook-form": "^7.51.2",
+    "sharp": "^0.33.3"
   },
   "devDependencies": {
     "@types/node": "20.12.7",
